@@ -109,7 +109,7 @@ const TaskList = ({ tasks = [], isLoading }) => {
     );
   }
 
-  // Filter out any null/undefined tasks
+ 
   const validTasks = tasks.filter(task => task && task._id);
 
   return (

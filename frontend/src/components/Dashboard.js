@@ -66,7 +66,7 @@ const Dashboard = () => {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      {/* App Bar */}
+      
       <AppBar position="sticky" elevation={1} sx={{ 
         backgroundColor: 'background.paper',
         color: 'text.primary',
@@ -104,9 +104,9 @@ const Dashboard = () => {
   }
   variant="outlined"
   sx={{ 
-    px: 2, // more horizontal padding
-    py: 1, // vertical padding (not always respected by Chip, but helps with label spacing)
-    height: 48, // similar height to large button
+    px: 2, 
+    py: 1, 
+    height: 48, 
     borderColor: 'divider',
     '.MuiChip-label': { 
       display: 'flex', 
@@ -192,7 +192,7 @@ const Dashboard = () => {
       </AppBar>
 
       <Container maxWidth="lg" sx={{ py: 4, flex: 1 }}>
-        {/* Action Bar */}
+        
         <Paper elevation={0} sx={{ 
           p: 2, 
           mb: 4,
@@ -223,14 +223,14 @@ const Dashboard = () => {
           </Stack>
         </Paper>
 
-        {/* Task Form (for managers) */}
+        
         {user?.role === 'manager' && (
           <Box id="task-form" sx={{ mb: 4 }}>
             <TaskForm />
           </Box>
         )}
 
-        {/* Content Section */}
+        
         {isLoading ? (
           <Box sx={{ display: 'flex', justifyContent: 'center', py: 8 }}>
             <CircularProgress />
@@ -260,7 +260,7 @@ const Dashboard = () => {
               </Typography>
             </Typography>
 
-            {/* Filter Controls - Moved below the heading */}
+            
             <StyledToggleButtonGroup
               value={selectedStatus}
               onChange={handleFilter}

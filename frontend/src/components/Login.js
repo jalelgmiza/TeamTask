@@ -55,7 +55,7 @@ const Login = () => {
       await login({ email, password }).unwrap();
       navigate('/dashboard');
     } catch (err) {
-      // Error handled by RTK Query
+     
     }
   };
 
@@ -82,7 +82,7 @@ const Login = () => {
     >
       <CssBaseline />
       
-      {/* Security Badge */}
+      
       <Box
         sx={{
           position: 'absolute',
@@ -105,7 +105,7 @@ const Login = () => {
         />
       </Box>
 
-      {/* Left Panel - Brand & Info */}
+      
       <Box
         sx={{
           position: 'absolute',
@@ -179,7 +179,7 @@ const Login = () => {
         </Box>
       </Box>
 
-      {/* Right Panel - Login Form */}
+    
       <Container
         maxWidth="sm"
         sx={{
@@ -195,7 +195,7 @@ const Login = () => {
       >
         <Box sx={{ width: '100%', maxWidth: 480, px: { xs: 3, sm: 0 } }}>
           
-          {/* Mobile Header */}
+        
           <Box sx={{ display: { xs: 'block', lg: 'none' }, mb: 4, textAlign: 'center' }}>
             <Avatar
               sx={{
@@ -234,7 +234,7 @@ const Login = () => {
                 position: 'relative'
               }}
             >
-              {/* Header */}
+              
               <Box sx={{ mb: 4 }}>
                 <Typography variant="h5" fontWeight="700" sx={{ mb: 1, color: '#1e293b' }}>
                   Secure Access Portal
@@ -244,7 +244,7 @@ const Login = () => {
                 </Typography>
               </Box>
 
-              {/* Security Status */}
+             
               <Box
                 sx={{
                   mb: 3,
@@ -265,7 +265,7 @@ const Login = () => {
                 </Typography>
               </Box>
 
-              {/* Error Alert */}
+              
               {error && (
                 <Fade in>
                   <Alert
@@ -285,7 +285,7 @@ const Login = () => {
                 </Fade>
               )}
 
-              {/* Login Form */}
+              
               <form onSubmit={handleSubmit}>
                 <Box sx={{ mb: 3 }}>
                   <Typography
@@ -397,7 +397,7 @@ const Login = () => {
                   />
                 </Box>
 
-                {/* Forgot Password */}
+                
                 <Box sx={{ display: 'flex', justifyContent: 'flex-end', mb: 4 }}>
                   <Link
                     to="/forgot-password"
@@ -412,7 +412,7 @@ const Login = () => {
                   </Link>
                 </Box>
 
-                {/* Sign In Button */}
+                
                 <Button
                   type="submit"
                   disabled={isLoading}
@@ -450,7 +450,7 @@ const Login = () => {
 
                 
 
-                {/* Register Link */}
+               
                 <Box sx={{ textAlign: 'center' }}>
                   <Typography variant="body2" color="text.secondary">
                     Need access to the platform?{' '}
@@ -470,7 +470,7 @@ const Login = () => {
             </Paper>
           </Fade>
 
-          {/* Footer */}
+          
           <Box sx={{ mt: 4, textAlign: 'center' }}>
   <Typography
     variant="body1"
@@ -491,9 +491,9 @@ const Login = () => {
         to={link.to}
         style={{
           textDecoration: 'none',
-          color: 'black',          // black text
-          fontSize: '1rem',        // larger size
-          fontWeight: 600          // bold
+          color: 'black',          
+          fontSize: '1rem',        
+          fontWeight: 600          
         }}
       >
         {link.text}

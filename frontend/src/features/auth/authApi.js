@@ -16,21 +16,21 @@ export const authApi = createApi({
   endpoints: (builder) => ({
     register: builder.mutation({
       query: (credentials) => ({
-        url: '/api/auth/register',  // Note the /api prefix here
+        url: '/api/auth/register',  
         method: 'POST',
         body: credentials,
       }),
     }),
     login: builder.mutation({
       query: (credentials) => ({
-        url: '/api/auth/login',  // Note the /api prefix here
+        url: '/api/auth/login',  
         method: 'POST',
         body: credentials,
       }),
     }),
     refreshToken: builder.mutation({
       query: (refreshToken) => ({
-        url: '/api/auth/refresh-token',  // Note the /api prefix here
+        url: '/api/auth/refresh-token',  
         method: 'POST',
         body: { refreshToken },
       }),

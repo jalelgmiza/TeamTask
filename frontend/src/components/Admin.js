@@ -47,7 +47,7 @@ const Admin = () => {
   const [register, { isLoading: isRegistering, error: registerError }] = useRegisterMutation();
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Register form state
+  
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -69,7 +69,7 @@ const Admin = () => {
       setShowAddUser(false);
       refetch();
     } catch (err) {
-      // Error handled by RTK Query
+    
     }
   };
 
@@ -88,7 +88,7 @@ const Admin = () => {
         boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
         overflow: 'hidden'
       }}>
-        {/* Header Section */}
+        
         <Box sx={{
           p: 4,
           bgcolor: 'primary.main',
@@ -119,7 +119,7 @@ const Admin = () => {
     borderRadius: 2,
     px: 3,
     boxShadow: 'none',
-    backgroundColor: '#1976d2', // blue
+    backgroundColor: '#1976d2', 
     color: '#fff',
     '&:hover': {
       backgroundColor: '#1565c0',
@@ -154,10 +154,10 @@ const Admin = () => {
           </Stack>
         </Box>
 
-        {/* Main Content */}
+        
         <Box sx={{ p: 4 }}>
           {showAddUser ? (
-            // Add User Form
+           
             <Card sx={{ 
               maxWidth: '800px',
               mx: 'auto',
@@ -301,7 +301,7 @@ const Admin = () => {
               </CardContent>
             </Card>
           ) : (
-            // Users Table Section
+            
             <>
               <Box sx={{ 
                 display: 'flex', 
