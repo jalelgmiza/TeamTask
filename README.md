@@ -6,15 +6,21 @@ A MERN stack application for task management with role-based access control, bui
 - **Authentication**: Secure JWT-based authentication with access and refresh tokens stored in localStorage.
 - **Role-Based Access**:
   - **User**: View and update status of their own tasks.
-  - **Manager**: Create, assign, update, delete tasks, and view all users in the admin panel.
+  - **Manager**: Create, assign, update, delete tasks, and manage all users in the admin panel.
 - **Task Management**: Full CRUD operations for tasks (title, description, status, assignedTo).
+- **dynamic filtering by task status**
 - **Admin Panel**: Managers can view a list of all users.
+- **Admin Panel**: Managers can create new users.
+- **Admin Panel**: Managers can search for specific user.
 - **Pagination**: Server-side pagination for tasks and users.
 - **UI**: Responsive and modern UI with Material-UI.
 - **State Management**: Redux Toolkit with RTK Query for efficient API calls.
 - **Logging**: Winston for request and error logging.
 - **Validation**: Joi for server-side input validation.
 - **Error Handling**: Centralized error handling for consistent responses.
+## 📺 Demo
+
+🎥 [Watch Demo](https://youtu.be/eQcypmXk3jw?si=qXhNBKKmETt1aezc)
 
 ## Login Interface
 ![Login Interface](images/login-tt.png)
@@ -31,6 +37,7 @@ A MERN stack application for task management with role-based access control, bui
 ## Admin Panel (Users Management)
 ![Users List](images/userslist-tt.png)
 ![Add User](images/adduser-tt.png)
+
 
 ## Tech Stack
 - **Backend**: Node.js, Express.js, MongoDB (Mongoose), JWT, Joi, Winston
