@@ -119,7 +119,7 @@ View and manage a paginated list of all registered users.
 
 **Logout**: Clears tokens and redirects to the login page.
 
-API Endpoints
+## API Endpoints
 ## Authentication
 **POST /api/auth/register**
 Body: { username: string, email: string, password: string, role: "user" | "manager" }
