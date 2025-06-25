@@ -58,7 +58,7 @@ const refreshToken = async (req, res) => {
     if (!user) return res.status(400).json({ message: 'Invalid user' });
 
     const accessToken = generateAccessToken(user);
-    const newRefreshToken = await generateRefreshToken(user); // Rotate refresh token
+    const newRefreshToken = await generateRefreshToken(user); 
 
     logger.info(`Token refreshed for user: ${user._id}`);
     res.json({ accessToken, refreshToken: newRefreshToken });

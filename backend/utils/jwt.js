@@ -8,8 +8,8 @@ const generateAccessToken = (user) => {
 
 const generateRefreshToken = async (user) => {
   const token = jwt.sign({ id: user._id }, process.env.JWT_REFRESH_SECRET, { expiresIn: '7d' });
-  const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); // 7 days
-  await RefreshToken.deleteMany({ userId: user._id }); // Invalidate old tokens
+  const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000); 
+  await RefreshToken.deleteMany({ userId: user._id }); 
   await RefreshToken.create({ token, userId: user._id, expiresAt });
   logger.info(`Refresh token generated for user: ${user._id}`);
   return token;

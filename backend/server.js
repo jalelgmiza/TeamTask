@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const cors = require('cors'); // Add this line
+const cors = require('cors'); 
 const connectDB = require('./config/db');
 const logger = require('./config/logger');
 const errorHandler = require('./middleware/errorHandler');
@@ -13,12 +13,12 @@ connectDB();
 
 const app = express();
 
-// Add CORS middleware
+
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Adjust based on your frontend URL
-  credentials: true, // If you're using cookies/sessions
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
-  allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
+  origin: process.env.FRONTEND_URL || 'http://localhost:3000', 
+  credentials: true, 
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], 
+  allowedHeaders: ['Content-Type', 'Authorization'] 
 }));
 
 app.use(express.json());
