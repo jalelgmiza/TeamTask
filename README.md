@@ -50,7 +50,7 @@ Navigate to the backend directory:
 
 cd backend
 
-Install dependencies:
+**Install dependencies:**
 
 
 npm install
@@ -63,7 +63,7 @@ JWT_REFRESH_SECRET=
 PORT=
 
 
-Start the backend server:
+**Start the backend server:**
 
 npm run dev
 
@@ -74,7 +74,7 @@ Navigate to the frontend directory:
 
 cd frontend
 
-Install dependencies:
+**Install dependencies:**
 
 npm install
 
@@ -82,7 +82,7 @@ Create a .env file in frontend/ with the following:
 
 REACT_APP_API_URL=
 
-Start the frontend server:
+**Start the frontend server:**
 
 npm start
 
